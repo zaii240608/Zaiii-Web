@@ -1,0 +1,357 @@
+body {margin:0;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #292929;
+  position: fixed ;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
+
+nav li {
+  float: left;
+}
+nav li img {
+    margin-right: 15px;
+    padding-top: 8px;
+    padding-left: 15PX;
+
+}
+
+nav li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 25px 55px;
+   text-decoration: none;
+   font-size: 25px;
+}
+nav li a:hover:not(.active) {
+   background-color: #111;
+}
+nav .active {
+    background-color: #d60000;
+}
+.wadah {
+    background-color: white;
+    width:100%;
+    height: 4650px;
+}
+.beranda {
+    background-color: white;
+    width: 100%;
+    height: 635px;
+    margin-top: 75px;
+    margin-left: 75px;
+    flex: 50%;
+}
+.beranda h2 {
+    margin: 45px 0px 0px 500px;
+    background-color: #333;
+    border-radius: 5px;
+    color: white;
+}
+.beranda h2:hover {
+    background-color: #111;
+}
+.beranda p {
+    font-size: 21px;
+}
+.img1 {
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 60px;
+    background-color: rgb(255, 255, 255);
+}
+.konten1 {
+    display: flex;
+    justify-content: space-between;
+}
+.wadah2 {
+    background-color: #333;
+    width: 100%;
+    height: 678px;
+}
+.sejarah {
+    background-color: grey;
+    width: 50%;
+    height: 500px;
+    padding-left: 15px;
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.sejarah p {
+    margin-top: 50px;
+    font-size: 21px;
+    background-color: grey;
+    
+}
+.visi {
+    background-color: grey;
+    width: 50%;
+    color: white;
+    height: 500px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.visi p {
+    margin-top: 50px;
+    font-size: 21px;
+    background-color: grey;
+    margin-right: 75px;
+}
+.konten {
+    display: flex;
+    justify-content: space-between;
+}
+.kurikulum {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    padding-top: 120px;
+}
+.kurikulum p {
+    margin: 75px;
+    font-size: 24px;
+}
+.pengajar {
+    background-color: #333;
+    width: 100%;
+    height: 1100px; 
+}
+.pengajar h1 {
+    margin-left: 600px;
+    padding-top: 100px;
+}
+.fasilitas {
+    background-color: white;
+    width: 100%;
+    min-height: 768px; 
+    padding-top: 75px;
+}
+.kontak {
+    background-color: #333;
+    width: 100%;
+    height: 768px;
+    display: flex;
+}
+.wadahkontak {
+  background-color: rgb(211, 211, 211);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.kontak table {
+  text-align: left;
+  margin-top: 230px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(165, 165, 165);
+  margin-right: 100px;
+  border-radius: 5px;
+  padding: 15px 25px 15px 25px;
+  align-items: flex-start;
+}
+.kontak h1 {
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.copyright {
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+.copyright p {
+    margin-top: 40px
+}
+h1 {
+    margin-top: 90px;
+    margin-left: 75px;
+}
+p {
+    margin-left: 75px;
+}
+.container {
+    position: relative;
+    width: 50%;
+    margin: 20px 20px 40px 20px;
+} 
+.image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    border-style: outset;
+    border-color: black;
+} 
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color:rgb(241, 241, 241);
+    overflow: hidden;
+    width: 149px;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 5%;
+} 
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+.text {
+    white-space: nowrap; 
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+}
+.baris1,.baris2,.baris3,.baris4 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-top: 5px;
+}
+
+.baris1 .foto{
+    margin-left: 153px;
+    margin-top: 70px;
+}
+.baris1 .foto2 {
+    margin-right: 0px;
+    margin-top: 70px;
+}
+.baris1 .foto3 {
+    margin-right: 275px;
+    margin-top: 70px;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 55%;
+  height: 55%;
+  position: relative;
+  margin: 60px 0px 0px 315px;
+}
+
+/* Number text (1/2 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color:#292929;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 5s ease;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-left: 80px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container5 {
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    margin-top: 50px;
+    flex: 50%;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 8%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
